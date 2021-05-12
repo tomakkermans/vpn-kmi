@@ -9,26 +9,20 @@ Authors: Tom Akkermans and Johan Moreels, 9/12/2019
 
 - Preparation(2): Copy the necessary contents into this folder ("script_vpn_kmi.sh", "client.ovpn", folder "/scripts_for_desktop/"):
 
-    tomakker@soot-p:~/VPN> ls -lah
-    total 36K
-    drwxr-xr-x  3 tomakker users  177  5 dec 20:19 .
-    drwxr-xr-x 69 tomakker users 4,0K  5 dec 19:38 ..
-    -rw-------  1 tomakker users  13K 20 dec  2018 client.ovpn
-    drwxrwxr-x  2 tomakker users  105  5 dec 20:17 scripts_for_desktop
-    -rw-r--r--  1 tomakker users 1,3K  5 dec 20:19 script_vpn_kmi_README.txt
-    -rwxr-xr-x  1 tomakker users  442  5 dec 20:00 script_vpn_kmi.sh
-    tomakker@soot-p:~/VPN> 
+    tomakker@soot-p:~> ls -lah
+    -rw-rw-r--  1 tom tom  21K Mär 28 20:01 client.ovpn
+    drwxrwxr-x  8 tom tom 4,0K Mai 12 21:13 .git
+    -rw-r--r--  1 tom tom 2,7K Mär  6  2020 README.md
+    drwxrwxr-x  2 tom tom 4,0K Mai 12 21:11 scripts_for_desktop
+    -rwxrwxrwx  1 tom tom  445 Mär 28 22:09 script_vpn_kmi.sh
+    -rwxr-xr-x  1 tom tom   50 Mär 11  2020 VPN_RMIB_gnome_newscreen.sh
+    -rwxr-xr-x  1 tom tom   54 Mai 12 21:10 VPN_RMIB_gnome.sh
+    -rwxr-xr-x  1 tom tom   55 Mär 28 22:05 VPN_RMIB_kde_newscreen.sh
+    -rwxrwxrwx  1 tom tom   59 Mai 12 21:10 VPN_RMIB_kde.sh
 
 - Preparation(3): Copy the relevant (Gnome or KDE) scripts from folder "/scripts_for_desktop/" to the desktop:
 
-    tomakker@soot-p:~/VPN/scripts_for_desktop$ ls -lah
-    total 20K
-    drwxrwxr-x 2 tom tom 4,0K dec  5 20:26 .
-    drwxrwxrwx 3 tom tom 4,0K dec  5 20:26 ..
-    -rwxrwxrwx 1 tom tom   40 dec  5 20:03 VPN_RMIB_gnome_newscreen.sh
-    -rwxrwxrwx 1 tom tom   50 dec  5 20:03 VPN_RMIB_gnome.sh
-    -rwxr-xr-x 1 tom tom   48 dec  5 20:09 VPN_RMIB_kde.sh
-    tomakker@soot-p:~/VPN/scripts_for_desktop$ cp VPN_RMIB_kde.sh /home/tomakker/Desktop/
+    tomakker@soot-p:~> cp VPN_RMIB_kde.sh /home/tomakker/Desktop/
 
 - on personal laptop terminal, make new id_rsa WITHOUT password, and with default name id_rsa (first remove already existing)
   tomakker@soot-p:~> ssh-keygen
